@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daniel Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="flex flex-col bg-gray-800">
+<header>
+<nav class="fixed top-0 w-full h-16 bg-gray-600 px-4 py-4 transform -translate-y-full transition-transform duration-300 ease-in-out md:w-[50%] md:mx-[25%] lg:w-[50%]" id="navbar">
+  <ul class="flex flex-row items-center justify-evenly">
+    <li class="mr-4">
+      <button class="bg-gray-800 hover:bg-gray-600 text-white font-bold py-1 px-2 rounded"><a href="#" class="hover:text-gray-300 text-md md:text-2xl lg:2xl">Home</a></button>
+    </li>
+    <li class="mr-4">
+     <button class="bg-gray-800 hover:bg-gray-600 text-white font-bold py-1 px-1 rounded"><a href="#" class="hover:text-gray-300 text-md md:text-2xl lg:2xl">About</a></button>
+    </li>
+    <li class="mr-4">
+     
+    <button class="bg-gray-800 hover:bg-gray-600 text-white font-bold py-1 px-2 rounded"> <a href="#" class="hover:text-gray-300 text-md md:text-2xl lg:2xl">Contact</a></button>
+    </li>
+  </ul>
+</nav>
+</header>
+
+<button class="fixed top-4 right-4 lg:top-12 lg:right-12 justify-center w-8 h-8 bg-gray-800 hover:bg-gray-700 rounded-full" id="toggle-navbar">
+        <img class="h-8 w-8 rounded-full" src="images/dan.jpg" alt="">
+        </div>
+       </button> 
+
+
+<section class="flex flex-col items-center justify-center">
+  <div class="mx-auto pt-30 p-4">
+    <img class="h-40 w-40 rounded-full md:h-50 md:w-50 lg:h-65 lg:w-65" src="images/dan.jpg" alt="Daniel's profile picture">
+  </div>
+  <div class="container flex flex-col items-center text-center mx-auto my-5 p-4">
+    <h2 class="text-lg text-yellow-200 font-bold md:text-xl lg:text-2xl ">Hi <span class="text-gray-500">, I'm Daniel Iyaji</span></h2>
+    <h1 class="text-5xl text-white font-bold my-0.5 md:text-8xl md:my-1.5 lg:text-9xl lg:my-3">Front-End Web Developer</h1>
+    <p class="text-sm text-gray-500 w-[40ch] my-0.5 md:text-1xl md:w-[60ch] lg:text-2xl lg:my-3 lg:w-[60ch]"><i>I am passionate in building amazing websites, and also programming, sound engineering, media and innovative technologies</i></p>
+  </div>
+</section>
+  
+  
+  
+  
+  
+  
+  
+  
+  <script>
+  const navbar = document.getElementById('navbar');
+  const toggleNavbarButton = document.getElementById('toggle-navbar');
+
+  toggleNavbarButton.addEventListener('click', () => {
+    navbar.classList.toggle('translate-y-0');
+  });
+</script>
+  
+</body>
+</html>
